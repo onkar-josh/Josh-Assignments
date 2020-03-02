@@ -44,7 +44,7 @@ h.each do |key,value|
 end  
 
 puts "=================================ip validation=============================="
-ip_addr= "255.234.23.266"
+ip_addr= "255.234.23.2a6"
 splitted_arr = ip_addr.split(/\./)
 puts splitted_arr
 i = 0
@@ -52,8 +52,10 @@ count=0
 while i<4
     if(splitted_arr[i].to_i<256)
         count += 1
-    else
+    elsif(ip_addr.match /[a-z]/)
         break
+	else
+	break
     end
     i+=1
 end
