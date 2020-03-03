@@ -37,13 +37,11 @@ end
 class Animal
     include Swimable::Swim2 #use include  extrend and prepend in this
 
-    def swim
-        puts "class method"
-    end    
+       
 end
 
 
-Animal.new.swim
+Animal.swim
 #try all access specifiers inside module
 
 #documents - class specific

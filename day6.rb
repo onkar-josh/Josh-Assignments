@@ -11,7 +11,7 @@ module Methods
             while(i<Location.length) do
               if Status[i.to_i] == status
                 puts "======================================================================"
-                puts "\n#{i.to_i+1}.\n Location is : #{Location[i.to_i]}\n Area is : #{Area[i.to_i]}\n Prize is : #{Prize[i.to_i]}\n Property Status : #{Status[i.to_i]}\n"
+                puts "\n property number : #{i.to_i+1}.\n Location is : #{Location[i.to_i]}\n Area is : #{Area[i.to_i]}\n Prize is : #{Prize[i.to_i]}\n Property Status : #{Status[i.to_i]}\n"
               end 
                 i += 1
             end
@@ -66,13 +66,11 @@ class Hotel
 
 end
 
-
 puts "welcome to yoyo house"
 ch=1
 while(ch)
 
-puts "\n 1. see rental properties\n 2. see selling property\n 3. Buy property\n 4. add property\n 5. take property on rent"
-
+puts "\n 1. see rental properties\n 2. see selling property\n 3. Buy property\n 4. add property\n 5. take property on rent\n enter any key to exit\n\n please enter your choice"
 ch = gets.chomp.to_i
 
 case ch
